@@ -26,4 +26,16 @@ fun FormBiodata() {
                 modifier = Modifier.fillMaxSize()
             )
         }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .fillMaxHeight()
+                .padding(top = 190.dp)
+                .verticalScroll(rememberScrollState()),
+            shape = RoundedCornerShape(topStart = 32.dp, topEnd = 32.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(id = R.color.background_card)
+            ),
+            elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+        ) {
 }
