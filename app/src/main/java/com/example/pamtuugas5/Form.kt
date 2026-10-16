@@ -8,4 +8,5 @@ fun FormBiodata() {
     var email by remember { mutableStateOf("") }
     var tglLahir by remember { mutableStateOf("") }
     var experience by remember { mutableStateOf("") }
+    var isAndroidSelected by remember { mutableStateOf(false) }
 }
