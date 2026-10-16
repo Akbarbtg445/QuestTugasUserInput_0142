@@ -125,6 +125,15 @@ fun FormBiodata() {
                 }
 
                 Spacer(modifier = Modifier.height(24.dp))
+
+                Text(
+                    text = stringResource(id = R.string.label_pilih_skill),
+                    fontWeight = FontWeight.Bold,
+                    modifier = Modifier.align(Alignment.Start),
+                    color = colorResource(id = R.color.text_purple)
+                )
+
+                Spacer(modifier = Modifier.height(8.dp))
             }
             }
 }
