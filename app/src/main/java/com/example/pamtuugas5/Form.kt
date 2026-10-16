@@ -11,4 +11,19 @@ fun FormBiodata() {
     var isAndroidSelected by remember { mutableStateOf(false) }
     var isUiUxSelected by remember { mutableStateOf(false) }
     var isWebSelected by remember { mutableStateOf(false) }
+
+    Box(modifier = modifier) {
+
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(260.dp)
+                .background(colorResource(id = R.color.background_screen))
+        ) {
+            Image(
+                painter = painterResource(id = R.drawable.copland),
+                contentDescription = null,
+                modifier = Modifier.fillMaxSize()
+            )
+        }
 }
