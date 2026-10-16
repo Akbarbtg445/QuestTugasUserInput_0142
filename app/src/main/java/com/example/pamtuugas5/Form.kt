@@ -38,4 +38,11 @@ fun FormBiodata() {
             ),
             elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
         ) {
+            Column(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(24.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+            }
 }
