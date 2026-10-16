@@ -134,6 +134,36 @@ fun FormBiodata() {
                 )
 
                 Spacer(modifier = Modifier.height(8.dp))
+
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Checkbox(
+                            checked = isAndroidSelected,
+                            onCheckedChange = { isAndroidSelected = it }
+                        )
+                        Text(text = stringResource(id = R.string.skill_android), fontSize = 12.sp)
+                    }
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Checkbox(
+                            checked = isUiUxSelected,
+                            onCheckedChange = { isUiUxSelected = it }
+                        )
+                        Text(text = stringResource(id = R.string.skill_ui_ux), fontSize = 12.sp)
+                    }
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        Checkbox(
+                            checked = isWebSelected,
+                            onCheckedChange = { isWebSelected = it }
+                        )
+                        Text(text = stringResource(id = R.string.skill_web), fontSize = 12.sp)
+                    }
+                }
+
+                Spacer(modifier = Modifier.height(32.dp))
             }
             }
 }
