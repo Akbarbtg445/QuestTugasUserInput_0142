@@ -164,6 +164,24 @@ fun FormBiodata() {
                 }
 
                 Spacer(modifier = Modifier.height(32.dp))
+
+                Button(
+                    onClick = { },
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(50.dp),
+                    shape = RoundedCornerShape(12.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = colorResource(id = R.color.button_bg)
+                    )
+                ) {
+                    Text(
+                        text = stringResource(id = R.string.btn_proceed),
+                        color = colorResource(id = R.color.gray_text),
+                        fontWeight = FontWeight.Bold
+                    )
+                }
             }
-            }
+        }
+    }
 }
