@@ -1,8 +1,24 @@
 package com.example.pamtuugas5
+
 import androidx.compose.runtime.*
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.*
+import androidx.compose.ui.Alignment
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 @Composable
-fun FormBiodata() {
+fun FormBiodata(modifier: Modifier = Modifier) {
     var namaDepan by remember { mutableStateOf("") }
     var namaBelakang by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
@@ -68,14 +84,14 @@ fun FormBiodata() {
                         value = namaDepan,
                         onValueChange = { namaDepan = it },
                         label = { Text(stringResource(id = R.string.hint_nama_depan)) },
-                        modifier = Modifier.weight(1.dp),
+                        modifier = Modifier.weight(1f),
                         shape = RoundedCornerShape(12.dp)
                     )
                     OutlinedTextField(
                         value = namaBelakang,
                         onValueChange = { namaBelakang = it },
                         label = { Text(stringResource(id = R.string.hint_nama_belakang)) },
-                        modifier = Modifier.weight(1.dp),
+                        modifier = Modifier.weight(1f),
                         shape = RoundedCornerShape(12.dp)
                     )
                 }
@@ -106,7 +122,7 @@ fun FormBiodata() {
                                 contentDescription = null
                             )
                         },
-                        modifier = Modifier.weight(1.dp),
+                        modifier = Modifier.weight(1f),
                         shape = RoundedCornerShape(12.dp)
                     )
                     OutlinedTextField(
@@ -119,7 +135,7 @@ fun FormBiodata() {
                                 contentDescription = null
                             )
                         },
-                        modifier = Modifier.weight(1.dp),
+                        modifier = Modifier.weight(1f),
                         shape = RoundedCornerShape(12.dp)
                     )
                 }
@@ -130,7 +146,7 @@ fun FormBiodata() {
                     text = stringResource(id = R.string.label_pilih_skill),
                     fontWeight = FontWeight.Bold,
                     modifier = Modifier.align(Alignment.Start),
-                    color = colorResource(id = R.color.text_purple)
+                    color = colorResource(id = R.color.text_blue)
                 )
 
                 Spacer(modifier = Modifier.height(8.dp))
