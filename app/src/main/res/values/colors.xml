@@ -3,4 +3,6 @@
     <color name="background_screen">#0B0118</color>
     <color name="background_card">#FFFFFF</color>
     <color name="text_purple">#4A148C</color>
+    <color name="gray_text">#757575</color>
+
 </resources>
