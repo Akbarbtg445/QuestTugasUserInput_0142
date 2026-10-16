@@ -9,4 +9,5 @@ fun FormBiodata() {
     var tglLahir by remember { mutableStateOf("") }
     var experience by remember { mutableStateOf("") }
     var isAndroidSelected by remember { mutableStateOf(false) }
+    var isUiUxSelected by remember { mutableStateOf(false) }
 }
